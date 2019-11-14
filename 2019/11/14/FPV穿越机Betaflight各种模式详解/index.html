@@ -168,17 +168,18 @@ ANGLE：角度模式或称自稳模式。此模式下摇杆映射的是飞机的
 <p>在这种模式下能够更容易控制多旋翼飞行器，甚至用物理机头朝你飞来飞去，因为飞控总是做出相同的反应。对于新手来说这是一个友好的模式，可以防止失控时不知道头部方向。</p>
 <p>Airmode<br>In the standard mixer / mode, when the roll, pitch and yaw gets calculated and saturates a motor, all motors will be reduced equally. When motor goes below minimum it gets clipped off. Say you had your throttle just above minimum and tried to pull a quick roll - since two motors can’t go any lower, you essentially get half the power (half of your PID gain). If your inputs would asked for more than 100% difference between the high and low motors, the low motors would get clipped, breaking the symmetry of the motor balance by unevenly reducing the gain. Airmode will enable full PID correction during zero throttle and give you ability for nice zero throttle gliding and actobatics. But also the cornering / turns will be much tighter now as there is always maximum possible correction performed. Airmode can also be enabled to work at all times by always putting it on the same switch like your arm switch or you can enable/disable it in air. Additional things and benefits: Airmode will additionally fully enable Iterm at zero throttle. Note that there is still some protection on the ground when throttle zeroed (below min\check) and roll/pitch sticks centered. This is a basic protection to limit motors spooling up on the ground. Also the Iterm will be reset above 70% of stick input in acro mode to prevent quick Iterm windups during finishes of rolls and flips, which will provide much cleaner and more natural stops of flips and rolls what again opens the ability to have higher I gains for some. Note that AIRMODE will also overrule motor stop function! It will basically also act as an idle up switch.</p>
 <p>在标准混控模式下，当计飞控算出roll、pitch和yaw并使电机饱和时，所有电机将平均减小。当电机低于最小值时，就会被截断。假设你的油门刚好高于最小值，并试图使roll快速滚动——因为两个电机不能再低，你实际上只得到一半的功率（你的PID增益的一半）。如果你的输入要求高、低电机之间的差异超过100%，低油门的电机就会被截断，不均匀地减少增益，从而破坏电机平衡的对称性。airmode模式将在零油门时启用全PID校正，使您能够进行良好的零油门滑行和动作。但现在转弯也会更紧凑，因为总是有可能进行的最大修正。airmode可以通过始终将其放在与ARM开关相同的开关上来启用，也可以在飞行中通过另一个POS通道开关启用/禁用它。额外的事情和好处是：airmode将在零油门下完全启用I值。注意，当油门归零（或者低于最小量）和roll/pitch杆居中时，仍有一些保护。这是一种基本保护措施，可将电机限制在地面上。此外，在ACRO模式下，I值将重置超过70%的杆输入，以防止在翻滚和翻滚完成时快速调用i值，这将提供更顺滑和更自然的翻滚和翻滚停止，这再次开启了更高I term增益的能力。注意，airmode也会否决电机停止功能！它基本上也会充当一个怠速上升开关。</p>
+ <iframe src="//player.bilibili.com/player.html?aid=66926889&cid=118396527&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<p>点击此处进入哔哩哔哩观看<a href="https://www.bilibili.com/read/cv3554510" target="_blank" rel="noopener">https://www.bilibili.com/read/cv3554510</a></p>
 <hr>
 <h2 id="鼓励大家自行查阅原版英文资料深入理解其中原理"><a href="#鼓励大家自行查阅原版英文资料深入理解其中原理" class="headerlink" title="鼓励大家自行查阅原版英文资料深入理解其中原理"></a>鼓励大家自行查阅原版英文资料深入理解其中原理</h2><p>很惭愧，能力有限，只能尽一些绵薄之力来回馈各位模友。感谢本文所引用的各位前辈的文章，如果没有这些前辈的研究成果我将无法完成本篇文章的最终写作。同时，我也感谢在航模学习过程中帮助过自己的同学、朋友以及素未谋面的热心模友和家人的支持。尤其是校航模队的各位朋友，没有当初他们耐心地指导，就不会有今天的我。以上内容，是基于自己的知识体系和认知范围内的理论与经验的总结，难免会有疏漏与不足之处，恳请各位模友批评指正。自己也正在努力学习科学文化知识，不求自己能力能大到报效祖国，但求能为航模事业为社会贡献一份自己的力量。</p>
-<p>SoarCamFPV</p>
-<p>2019.9.17</p>
+<p>SoarCamFPV<br>2019.9.17</p>
 <p>参考文献：</p>
 <blockquote>
 <p>[1]<a href="https://oscarliang.com/betaflight-modes/" target="_blank" rel="noopener">https://oscarliang.com/betaflight-modes/</a><br>[2]<a href="https://github.com/betaflight/betaflight/blob/master/docs/Modes.md" target="_blank" rel="noopener">https://github.com/betaflight/betaflight/blob/master/docs/Modes.md</a><br>[3]<a href="https://github.com/iNavFlight/inav/wiki/Modes#angle" target="_blank" rel="noopener">https://github.com/iNavFlight/inav/wiki/Modes#angle</a></p>
 </blockquote>
 <hr>
-<p>欢迎进入我的b站链接查看更多干货内容！<br><a href="https://space.bilibili.com/190926209?spm_id_from=333.171.b_62696c692d6865616465722d6d.10" target="_blank" rel="noopener">SoarCamFPV b站传送门</a></p>
-<p>作者：SoarCamFPV<br><a href="https://www.bilibili.com/read/cv3554510" target="_blank" rel="noopener">https://www.bilibili.com/read/cv3554510</a><br>出处： bilibili</p>
+<p>作者：SoarCamFPV<br><a href="https://space.bilibili.com/190926209?spm_id_from=333.171.b_62696c692d6865616465722d6d.10" target="_blank" rel="noopener">单击我进入SoarCamFPV b站传送门</a><br>欢迎进入我的b站链接查看更多干货内容！<br>出处： bilibili</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls"
